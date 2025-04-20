@@ -90,3 +90,14 @@ p{
     color: hsl(0, 0%, 7%);
     margin-left: 12px;
 }
+
+.card:hover #title{
+    color: hsl(47, 88%, 63%);
+    text-shadow: 0 0 1px hsl(47, 88%, 63%);
+    transition-duration: 1s;
+}
+
+.card:hover{
+    box-shadow: 16px 16px 0px black; /* xaxis yaxis blur color*/   
+    transition-duration: 1s;
+}
