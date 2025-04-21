@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: 480px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-image{
+    object-fit: cover;
+    height: 100%;
+    width: 50%;
+}
+
+.content{
+    margin: 0px 24px 0px 24px;
+    height: 100%;
+    width: 100%;
+}
+
+#product-category{
+    margin-top: 28px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+#product-name{
+    margin-top: 16px;
+    font-family: 'Fraunces';
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#product-description{
+    margin-top: 16px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 150%;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-price{
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#new-price{
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-weight: 900;
+    color: hsl(158, 36%, 37%);
+}
+
+#old-price{
+    margin-left: 24px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.add-to-cart{
+    margin-top: 16px;
+    height: 48px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    border: 0px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button p{
+    margin-left: 12px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+button:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+    transition-duration: 1s;
+}
