@@ -114,3 +114,34 @@ button:hover{
     cursor: pointer;
     transition-duration: 1s;
 }
+
+@media screen and (max-width:600px) {
+    .main-container{
+        width: 90%;
+        height: 95%;
+        flex-direction: column;
+    }
+    .product-image{
+        object-fit: cover;
+        height: 40%;
+        width: 100%;
+    }
+    .content{
+        margin: 0px;
+        padding: 0px 18px 0px 18px;
+        height: 100%;
+        width: 100%;
+    }
+    #product-category{
+        margin-top: 24px;
+        font-size: 12px;
+    }
+    #product-name{
+        margin-top: 14px;
+        font-size: 28px;
+    }
+    #product-description{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
