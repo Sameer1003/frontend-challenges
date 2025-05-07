@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagline{
+    width:30%;
+}
+
+.tagline p{
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+#tag1{
+    font-size: 30px;
+    font-weight: 200;
+    color: hsl(212, 6%, 44%);
+}
+
+#tag2{
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+#tag-desc{
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(234, 12%, 34%);
+    margin-top: 0.5em;
+}
+
+.cards{  
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    overflow-y: visible;
+}
+
+.card{
+    height: 50%;
+    width: 25%;
+    border-top: 0.2em solid black;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /*multiple shadow concept*/
+}
+
+.card-pair{
+    height: calc(100% + 2em);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    gap: 2em;
+    margin-right: 2em;
+}
+.card-pair .card{
+    width: 100%;
+}
+
+.card-title{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    padding-left: 1em;
+    padding-top: 1em;
+}
+.card-desc{
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(212, 6%, 44%);
+    padding-left: 1.2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+.card-icon{
+    height: 25%;
+    width: 25%;
+    object-fit: contain;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+
+#card1{
+    border-color: hsl(180, 62%, 55%);
+}
+#card2{
+    border-color: hsl(0, 78%, 62%);
+}
+#card3{
+    border-color: hsl(34, 97%, 64%);
+}
+#card4{
+    border-color: hsl(212, 86%, 64%);
+}
