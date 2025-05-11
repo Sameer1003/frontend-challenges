@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap");
+
+/* ===========================
+========== PRESETS ===========
+=========================== */
+
+:root{
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500: hsl(263, 55%, 52%);
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+}
+
+/* ===========================
+========== TYPOGRAPHY ===========
+=========================== */
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
+/* ===========================
+========== UNIVERSAL ===========
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===========================
+========== LAYOUT ===========
+=========================== */
+
+main{
+    display: grid;
+    height: 70%;
+    width: 70%;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    min-width: 600px;
+}
+
+.content-container{
+    margin: 0.8em;
+    border-radius: 0.5em;
+    min-width: 200px;
+}
+
+.content-container-1{
+    grid-column: 1/3;
+    grid-row-start: 1;
+}
+.content-container-2{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.content-container-3{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.content-container-4{
+    grid-column: 2/4;
+    grid-row-start: 2;   
+}
+.content-container-5{
+    grid-column-start: 4;
+    grid-row: 1/3;
+}
+
+/* ===========================
+========== CARD LAYOUT ===========
+=========================== */
+
+.author{
+    display: flex;
+    align-items: center;
+    margin: 1.5em 1.5em 1em 1.5em;
+}
+.author-icon{
+    object-fit: contain;
+    border-radius: 50%;
+    height: 1.8em;
+}
+.author-info{
+    margin-left: 1em;
+}
+.author-info  h3{
+    font-weight: 500;
+}
+
+.content{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.content h3{
+    margin-top: 0.8em;
+    margin-bottom: 2em;
+    line-height: 1.3em;
+}
+
+/* ===========================
+========== CARD COLORING ===========
+=========================== */
+
+.content-container-1{
+    color: var(--white);
+    background-color: var(--purple-500);
+}
+.content-container-2{
+    color: var(--white);
+    background-color: var(--grey-500);
+}
+.content-container-3{
+    color: var(--grey-400);
+    background-color: var(--white);
+}
+.content-container-4{
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+.content-container-5{
+    color: var(--grey-400);
+    background-color: var(--white);
+}
+
+/* ===========================
+========== CARD SHADOW ===========
+=========================== */
+
+.content-container{
+    box-shadow: 0.1em 0.1em 1em var(--grey-400);
+}
+
+/* ===========================
+========== MEDIA QUERIES ===========
+=========================== */
+
+@media screen and (max-width: 600px){
+    html, body{
+        height: auto;
+        width: 100%;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        min-width: 300px;
+    }
+    .content-container{
+    }
+}
