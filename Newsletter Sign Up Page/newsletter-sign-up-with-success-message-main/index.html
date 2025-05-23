@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Success message start -->
+  <!--
+  Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message
+  -->
+  <!-- Success message end -->
+
+  <main>
+    <div class="card">
+      <div class="content">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="checklist-all">
+          <div class="checklist" id="checklist-one">
+            <img src="./assets/images/icon-list.svg" alt="icon-list-img">
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="checklist" id="checklist-two">
+            <img src="./assets/images/icon-list.svg" alt="icon-list-img">
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="checklist" id="checklist-three">
+            <img src="./assets/images/icon-list.svg" alt="icon-list-img">
+            <p>And much more!</p>
+          </div>
+        </div>
+        <div class="form">
+          <form action="">
+            <div class="email-input">
+              <div class="label-container">
+                <label for="email">Email address</label>
+                <span id="invalid-msg">Valid email required</span>
+              </div>
+              <input type="text" id="email" placeholder="email@company.com"/>
+            </div>
+            <div class="submit">
+              <input type="submit" id="submit" value="Subscribe to monthly newsletter"/>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card-img">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="card-img-desktop" id="card-img-desktop">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="card-img-mobile" id="card-img-mobile">
+      </div>
+    </div>
+  </main>
+ 
+  <script src="./index.js"></script>
+</body>
+</html>

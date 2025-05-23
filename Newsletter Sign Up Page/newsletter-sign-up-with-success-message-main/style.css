@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* ===========================
+========== PRESETS ===========
+=========================== */
+
+:root{
+    --red: hsl(4, 100%, 67%);
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* ===========================
+========== TYPOGRAPHY ===========
+=========================== */
+
+h2{
+    font-size: 2rem;
+    font-family: Roboto;
+    font-weight: 700;
+}
+p{
+    font-size: 0.75rem;
+    font-family: Roboto;
+    font-weight: 400;
+}
+label{
+    font-size: 0.6rem;
+    font-family: Roboto;
+    font-weight: 700;
+}
+input{
+    font-size: 0.75rem;
+    font-family: Roboto;
+    font-weight: 400;
+}
+span{
+    font-size: 0.6rem;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+/* ===========================
+========== UNIVERSAL ===========
+=========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: Roboto;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===========================
+========== LAYOUT ===========
+=========================== */
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 60%;
+    width: 70%;
+    max-width: 700px;
+    display: flex;
+    border-radius: 1em;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.content{
+    height: 100%;
+    width: 60%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.checklist{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+/* #invalid-msg{
+    text-align: right;
+} */
+
+.label-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#invalid-msg{
+    display: none;
+    color: var(--red);
+}
+
+.email-input{
+    display: flex;
+    flex-direction: column;
+}
+.email-input input{
+    margin-top: 0.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid var(--grey);
+}
+.submit input{
+    display: block;
+    width: 100%;
+    background-color: var(--blue-800);
+    border-color: var(--blue-800);
+    color: var(--white);
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    font-weight: 700;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+.submit input:hover{
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.card-img{
+    height: 100%;
+    width: 40%;
+}
+
+#card-img-desktop{
+    height: 100%;
+    object-fit: cover;
+}
+#card-img-mobile{
+    display: none;
+}
+
+
+/* ===========================
+========== COlORS ===========
+=========================== */
+
+body{
+    background-color: var(--blue-700);
+}
+
+.card{
+    background-color: var(--white);
+}
+
+/* ===========================
+========== MEDIA-QUERIES ===========
+=========================== */
+
+@media screen and (max-width: 600px) {
+    .card{
+        height: 100%;
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 0;
+        align-items: center;
+    }
+    .content{
+        height: 60%;
+        width: 100%;
+        padding: 1em;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        order: 2;
+    }
+
+    .card-img{
+        height: 40%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #card-img-desktop{
+        display: none;
+    }
+    #card-img-mobile{
+        display: inline-block;
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
